@@ -1,0 +1,304 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║    ███████╗██████╗ ████████╗██╗  ██╗ ██████╗ ██████╗ ██╗ ██████╗║
+║    ██╔════╝██╔══██╗╚══██╔══╝██║  ██║██╔═══██╗██╔══██╗██║██╔════╝║
+║    █████╗  ██████╔╝   ██║   ███████║██║   ██║██████╔╝██║██║     ║
+║    ██╔══╝  ██╔══██╗   ██║   ██╔══██║██║   ██║██╔══██╗██║██║     ║
+║    ███████╗██║  ██║   ██║   ██║  ██║╚██████╔╝██║  ██║██║╚██████╗║
+║    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝║
+║                                                                ║
+║                 Real-time Earthquake Monitor                   ║
+║                         Version 1.0.0                          ║
+║                    Developer: EbiRom96                         ║
+║               GitHub: https://github.com/EbiRom96              ║
+║          Contact: Raptor96@nixom.ir, Orion.GodRaptor@hotmail.com║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 TABLE OF CONTENTS
+────────────────────────────────────────────────────────────────────
+1.  Introduction
+2.  Features
+3.  System Requirements
+4.  Installation Guide
+5.  How to Use
+6.  Technical Details
+7.  Data Source
+8.  Developer Information
+9.  Support & Donation
+10. License & Copyright
+11. Frequently Asked Questions (FAQ)
+
+1. INTRODUCTION
+────────────────────────────────────────────────────────────────────
+Erthoric is a powerful, real-time earthquake monitoring application 
+that provides live data about seismic activities around the world. 
+Designed with both simplicity and functionality in mind, it serves 
+as an essential tool for researchers, students, emergency responders, 
+and anyone interested in seismic events.
+
+The application fetches real-time data from reliable geological 
+sources and presents it in an easy-to-understand format with 
+color-coded magnitude indicators and timely alerts.
+
+2. FEATURES
+────────────────────────────────────────────────────────────────────
+🌍 REAL-TIME MONITORING
+   • Live earthquake data from around the world
+   • Automatic updates every time you refresh
+   • Color-coded magnitude indicators (Green/Yellow/Red)
+
+🗺️ CONTINENTAL FILTERING
+   • View earthquakes by specific continents
+   • Asia, Europe, North America, South America, Africa, Oceania
+   • Country-based filtering within continents
+
+💥 LARGEST EARTHQUAKES
+   • Sort earthquakes by magnitude
+   • Identify the most significant recent events
+   • Top 10 largest earthquakes display
+
+🔔 SMART ALERT SYSTEM
+   • Set custom alerts for specific cities
+   • Configure minimum magnitude thresholds
+   • Instant notifications when conditions are met
+
+📊 USER-FRIENDLY INTERFACE
+   • Interactive console menu
+   • Clear data presentation
+   • Easy navigation between features
+
+⚡ CROSS-PLATFORM COMPATIBILITY
+   • Works on Windows, macOS, and Linux
+   • Both Python script and standalone EXE versions available
+
+3. SYSTEM REQUIREMENTS
+────────────────────────────────────────────────────────────────────
+MINIMUM REQUIREMENTS:
+• Operating System: Windows 7+, macOS 10.12+, or Linux
+• Python: Version 3.6 or higher (for script version)
+• RAM: 512 MB
+• Storage: 50 MB free space
+• Internet Connection: Required for data fetching
+
+RECOMMENDED REQUIREMENTS:
+• Operating System: Windows 10+, macOS 11+, or Ubuntu 18.04+
+• Python: Version 3.8 or higher
+• RAM: 1 GB or more
+• Storage: 100 MB free space
+• Internet Connection: Broadband recommended
+
+4. INSTALLATION GUIDE
+────────────────────────────────────────────────────────────────────
+
+METHOD 1: STANDALONE EXE (Recommended for End Users)
+─────────────────────────────────────────────────────
+1. Download the 'Erthoric.exe' file
+2. Double-click to run (no installation required)
+3. The program will start immediately
+
+METHOD 2: PYTHON SCRIPT (For Developers)
+────────────────────────────────────────
+1. Ensure Python 3.6+ is installed on your system
+2. Install required package: pip install requests
+3. Run the script: python erthoric.py
+
+METHOD 3: USING INSTALLER BATCH FILE
+─────────────────────────────────────
+1. Download all project files to a folder
+2. Double-click 'install.bat'
+3. Follow the on-screen instructions
+
+5. HOW TO USE
+────────────────────────────────────────────────────────────────────
+
+MAIN MENU OPTIONS:
+──────────────────
+1. 🌍 SHOW ALL RECENT EARTHQUAKES
+   - Displays all earthquakes from the past hour
+   - Shows location, magnitude, time, and depth
+   - Limited to 20 most recent events
+
+2. 🗺️ SHOW EARTHQUAKES BY CONTINENT
+   - Filter earthquakes by specific continent
+   - Select from available continents
+   - View region-specific seismic activity
+
+3. 💥 SHOW LARGEST EARTHQUAKES
+   - Displays earthquakes sorted by magnitude
+   - Shows the top 10 strongest events
+   - Helps identify major seismic activity
+
+4. 🔔 SET CITY ALERT
+   - Set up custom alerts for specific cities
+   - Define minimum magnitude threshold
+   - Receive notifications when conditions are met
+
+5. 📊 SHOW ACTIVE ALERTS
+   - View all currently configured alerts
+   - See alert criteria and creation time
+   - Monitor your alert settings
+
+6. 🔄 REFRESH DATA
+   - Fetch the latest earthquake data
+   - Update the display with current information
+
+7. ℹ️ ABOUT & VERSION
+   - Display program information
+   - Show developer details
+   - View version and contact information
+
+8. 🚪 EXIT
+   - Close the application safely
+
+6. TECHNICAL DETAILS
+────────────────────────────────────────────────────────────────────
+PROGRAMMING LANGUAGE: Python 3
+REQUIRED LIBRARIES: requests
+DATA FORMAT: JSON via REST API
+REFRESH RATE: Manual (user-initiated)
+DATA RETENTION: Real-time only (no historical data storage)
+
+ARCHITECTURE:
+• Object-oriented design with Erthoric class
+• Modular functions for each feature
+• Error handling for network issues
+• Cross-platform compatibility
+
+DATA STRUCTURE:
+• Each earthquake entry contains:
+  - Location (place name)
+  - Magnitude (Richter scale)
+  - Time (relative and absolute)
+  - Depth (kilometers)
+  - Geographical coordinates
+
+7. DATA SOURCE
+────────────────────────────────────────────────────────────────────
+Erthoric uses the United States Geological Survey (USGS) Earthquake 
+Catalog API, which provides:
+
+• Real-time earthquake data from global seismic networks
+• Verified and quality-controlled information
+• Comprehensive coverage of seismic events worldwide
+• Data updated multiple times per hour
+
+USGS API Endpoint:
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson
+
+The data includes all earthquakes from the past hour with magnitude 
+1.0 or greater.
+
+8. DEVELOPER INFORMATION
+────────────────────────────────────────────────────────────────────
+DEVELOPER: EbiRom96
+GITHUB: https://github.com/EbiRom96
+EMAIL: Raptor96@nixom.ir
+ALTERNATE EMAIL: Orion.GodRaptor@hotmail.com
+
+SKILLS & TECHNOLOGIES:
+• Python Programming
+• REST API Integration
+• Data Visualization
+• Console Application Development
+• Cross-Platform Development
+
+PROJECT HISTORY:
+• Initial Release: Version 1.0.0
+• Development Started: 2024
+• Status: Actively Maintained
+
+9. SUPPORT & DONATION
+────────────────────────────────────────────────────────────────────
+
+SUPPORT OPTIONS:
+• Email Support: Contact via above email addresses
+• GitHub Issues: Report bugs or request features
+• Documentation: Read included README files
+
+DONATION:
+If you find Erthoric useful and would like to support its development,
+consider making a donation. Your support helps:
+
+• Cover development and maintenance costs
+• Implement new features and improvements
+• Support future projects
+
+For donation information, please see the 'Donation.txt' file included
+with this application or contact the developer directly.
+
+10. LICENSE & COPYRIGHT
+────────────────────────────────────────────────────────────────────
+LICENSE: MIT License
+
+COPYRIGHT NOTICE:
+Copyright (c) 2024 EbiRom96
+
+PERMISSIONS:
+• Commercial use
+• Modification
+• Distribution
+• Private use
+
+CONDITIONS:
+• Include original copyright notice
+• Include license copy in distributions
+
+LIMITATIONS:
+• No liability
+• No warranty
+
+For full license details, see the LICENSE file included with this
+distribution.
+
+11. FREQUENTLY ASKED QUESTIONS (FAQ)
+────────────────────────────────────────────────────────────────────
+
+Q: Is the earthquake data real-time?
+A: Yes, data is fetched directly from USGS and is typically updated
+   multiple times per hour.
+
+Q: Do I need an internet connection?
+A: Yes, an active internet connection is required to fetch the latest
+   earthquake data.
+
+Q: How often should I refresh the data?
+A: You can refresh as often as needed. The USGS API updates their
+   data approximately every 5-10 minutes.
+
+Q: Can I use this for emergency alerts?
+A: While Erthoric provides real-time data, it should not be used as
+   a primary emergency alert system. Always rely on official emergency
+   services for critical alerts.
+
+Q: Why are some earthquakes missing?
+A: The application shows earthquakes from the past hour only. Older
+   events are not displayed to keep the data current and manageable.
+
+Q: Can I export the earthquake data?
+A: The current version focuses on real-time display. Future versions
+   may include data export capabilities.
+
+Q: Is my location data collected?
+A: No, Erthoric does not collect any personal data or location
+   information. It only fetches public earthquake data.
+
+Q: How accurate is the magnitude information?
+A: The data comes from USGS, which is one of the most reliable
+   sources for earthquake information worldwide.
+
+────────────────────────────────────────────────────────────────────
+THANK YOU FOR USING ERTHORIC!
+
+We hope this application serves as a valuable tool for monitoring
+seismic activity and increasing awareness about earthquake events.
+
+For the latest updates and new features, please check the GitHub
+repository regularly.
+
+Stay safe and informed!
+
+- EbiRom96
+────────────────────────────────────────────────────────────────────
+Last Updated: January 2024
+Version: 1.0.0

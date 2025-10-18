@@ -1,2 +1,18 @@
-# Erthoric
-Erthoric is a powerful, real-time earthquake monitoring application  that provides live data about seismic activities around the world.  Designed with both simplicity and functionality in mind, it serves  as an essential tool for researchers, students, emergency responders,  and anyone interested in seismic events.
+# Erthoric - Real-time Earthquake Monitor
+
+A Python console application that displays real-time earthquake data from around the world.
+
+## Features
+
+- 🌍 **Real-time Data**: Fetches live earthquake data from USGS
+- 🗺️ **Continental View**: Filter earthquakes by continent
+- 💥 **Largest Earthquakes**: View the strongest recent earthquakes
+- 🔔 **City Alerts**: Set custom alerts for specific cities
+- 📊 **Interactive Menu**: Easy-to-use console interface
+
+## Installation
+
+1. Ensure you have Python 3.6+ installed
+2. Install required packages:
+   ```bash
+   pip install requests
